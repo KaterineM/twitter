@@ -17,6 +17,7 @@ gem 'haml'
 gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
+gem "paperclip", "~> 5.0.0"
 # gem 'redis', '~> 3.0'
 # gem 'bcrypt', '~> 3.1.7'
 # gem 'capistrano-rails', group: :development
