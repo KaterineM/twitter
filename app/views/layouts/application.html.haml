@@ -8,6 +8,6 @@
   %body
     -unless current_user.nil?
       %h4
-        =current_user.user_profile.name
+        =current_user.email
       =link_to 'Logout', destroy_user_session_path, method: :delete
     =yield
