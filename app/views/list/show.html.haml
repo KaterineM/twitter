@@ -1,0 +1,4 @@
+-@tweets.each do |t|
+  %h3=t.content
+  -t.tweets.reverse.each do |r|
+    %h5=r.content

@@ -9,6 +9,15 @@ class ListController < ApplicationController
   #/list/id
   def show
     @list_members = ListMember.where(list: @list)
+
+    tweets = []
+    list_members.each do |lm|
+      lm.user.tweet.each do |t|
+        tweets.push(t)
+      end
+    end
+
+    @tweets = tweets.sort_by(&:created_at).reverse
   end
 
   def new
