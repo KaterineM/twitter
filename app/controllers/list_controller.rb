@@ -8,6 +8,7 @@ class ListController < ApplicationController
 
   #/list/id
   def show
+    @list_members = ListMember.where(list: @list)
   end
 
   def new
